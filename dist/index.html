@@ -3,12 +3,6 @@
     <title>Alex</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css"/>
     <link rel="stylesheet" type="text/css" href="lib/semantic.min.css">
-    <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-    <script src="lib/semantic.min.js"></script>
-    <script src="lib/vue.min.js"></script>
 </head>
 <body>
 <header>
@@ -23,8 +17,8 @@
         </div>
 
         <div class="ui text container">
-            <h1 class="ui inverted header">
-                Alex Wells
+            <h1 id="app" class="ui inverted header">
+                {{ message }}
             </h1>
         </div>
     </div>
@@ -32,5 +26,12 @@
 <nav></nav>
 <section></section>
 <footer></footer>
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="lib/semantic.min.js"></script>
+<script src="lib/vue.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
